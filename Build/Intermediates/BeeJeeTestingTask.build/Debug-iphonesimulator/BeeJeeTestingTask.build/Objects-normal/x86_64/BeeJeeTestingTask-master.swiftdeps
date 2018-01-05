@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "a81fb5576e6417d2d6d2665adfab807d"
+build_time: [1515169982, 527916000]
+inputs:
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/ViewController.swift": [1515169980, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/AppDelegate.swift": [1515169980, 0]
