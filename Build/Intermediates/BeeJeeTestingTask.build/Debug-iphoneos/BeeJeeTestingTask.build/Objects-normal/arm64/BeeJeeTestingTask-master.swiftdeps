@@ -1,0 +1,17 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "c88ddbeb4ebfbc2193d31f9f40400763"
+build_time: [1515330515, 635474000]
+inputs:
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/City+CoreDataProperties.swift": [1515328357, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/City+CoreDataClass.swift": [1515328357, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/State+CoreDataClass.swift": [1515328357, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/Address+CoreDataClass.swift": [1515328357, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/Contact+CoreDataClass.swift": [1515328357, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/PhoneNumber+CoreDataProperties.swift": [1515328357, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/InitialJsonModel.swift": [1515329908, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/AppDelegate.swift": [1515323721, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/PhoneNumber+CoreDataClass.swift": [1515328357, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/Contact+CoreDataProperties.swift": [1515328726, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/Address+CoreDataProperties.swift": [1515328357, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/ContactListTVC.swift": [1515330508, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/State+CoreDataProperties.swift": [1515328726, 0]
