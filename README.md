@@ -18,6 +18,8 @@ These attributes are just a guideline of the required information, how the data 
 Just be prepared to discuss your design decisions.
 
 ### (UI you can see it on UI-image.jpeg)
+![UI you can see it on UI-image.jpg](https://github.com/OctoberHammer/BeeJeeTestingTask/blob/dev/UI-image.jpg "UI you can see it on UI-image.jpeg")
+
 
 For the UI just model it after the built in iOS Contactís application from Apple. 
 The user must have the ability to display the list of Contacts as well as add, update, and delete a contact.
