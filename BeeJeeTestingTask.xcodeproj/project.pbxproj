@@ -7,25 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C329FED720024E55003EA95C /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = C329FED620024E55003EA95C /* contacts.json */; };
+		C329FED920024E9E003EA95C /* InitialJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FED820024E9E003EA95C /* InitialJsonModel.swift */; };
+		C329FEDB2002528E003EA95C /* ContactListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEDA2002528E003EA95C /* ContactListTVC.swift */; };
 		C3B888881FFFE03C0019D849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888871FFFE03C0019D849 /* AppDelegate.swift */; };
-		C3B8888A1FFFE03C0019D849 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888891FFFE03C0019D849 /* ViewController.swift */; };
 		C3B8888D1FFFE03C0019D849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B8888B1FFFE03C0019D849 /* Main.storyboard */; };
 		C3B888901FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3B8888E1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld */; };
 		C3B888921FFFE03C0019D849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B888911FFFE03C0019D849 /* Assets.xcassets */; };
 		C3B888951FFFE03C0019D849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B888931FFFE03C0019D849 /* LaunchScreen.storyboard */; };
 		C3B8889E1FFFE2850019D849 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3B8889C1FFFE2850019D849 /* Model.xcdatamodeld */; };
+		C3B888E220024AE60019D849 /* State+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888D820024AE60019D849 /* State+CoreDataClass.swift */; };
+		C3B888E320024AE60019D849 /* State+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888D920024AE60019D849 /* State+CoreDataProperties.swift */; };
+		C3B888E420024AE60019D849 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DA20024AE60019D849 /* Contact+CoreDataClass.swift */; };
+		C3B888E520024AE60019D849 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DB20024AE60019D849 /* Contact+CoreDataProperties.swift */; };
+		C3B888E620024AE60019D849 /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DC20024AE60019D849 /* City+CoreDataClass.swift */; };
+		C3B888E720024AE60019D849 /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DD20024AE60019D849 /* City+CoreDataProperties.swift */; };
+		C3B888E820024AE60019D849 /* PhoneNumber+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DE20024AE60019D849 /* PhoneNumber+CoreDataClass.swift */; };
+		C3B888E920024AE60019D849 /* PhoneNumber+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DF20024AE60019D849 /* PhoneNumber+CoreDataProperties.swift */; };
+		C3B888EA20024AE60019D849 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888E020024AE60019D849 /* Address+CoreDataClass.swift */; };
+		C3B888EB20024AE60019D849 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888E120024AE60019D849 /* Address+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C329FED620024E55003EA95C /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = SOURCE_ROOT; };
+		C329FED820024E9E003EA95C /* InitialJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialJsonModel.swift; sourceTree = "<group>"; };
+		C329FEDA2002528E003EA95C /* ContactListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTVC.swift; sourceTree = "<group>"; };
 		C3B888841FFFE03C0019D849 /* BeeJeeTestingTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeJeeTestingTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B888871FFFE03C0019D849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3B888891FFFE03C0019D849 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3B8888C1FFFE03C0019D849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3B8888F1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeeJeeTestingTask.xcdatamodel; sourceTree = "<group>"; };
 		C3B888911FFFE03C0019D849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3B888941FFFE03C0019D849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3B888961FFFE03C0019D849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B8889D1FFFE2850019D849 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C3B888D820024AE60019D849 /* State+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "State+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C3B888D920024AE60019D849 /* State+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "State+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C3B888DA20024AE60019D849 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C3B888DB20024AE60019D849 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C3B888DC20024AE60019D849 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C3B888DD20024AE60019D849 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C3B888DE20024AE60019D849 /* PhoneNumber+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C3B888DF20024AE60019D849 /* PhoneNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C3B888E020024AE60019D849 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C3B888E120024AE60019D849 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C329FEDC2002534B003EA95C /* UI Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C329FEDA2002528E003EA95C /* ContactListTVC.swift */,
+			);
+			path = "UI Controllers";
+			sourceTree = "<group>";
+		};
 		C3B8887B1FFFE03C0019D849 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +90,36 @@
 		C3B888861FFFE03C0019D849 /* BeeJeeTestingTask */ = {
 			isa = PBXGroup;
 			children = (
+				C3B888AF200237D50019D849 /* Model */,
 				C3B888871FFFE03C0019D849 /* AppDelegate.swift */,
-				C3B888891FFFE03C0019D849 /* ViewController.swift */,
 				C3B8888B1FFFE03C0019D849 /* Main.storyboard */,
+				C329FEDC2002534B003EA95C /* UI Controllers */,
 				C3B888911FFFE03C0019D849 /* Assets.xcassets */,
 				C3B888931FFFE03C0019D849 /* LaunchScreen.storyboard */,
+				C329FED620024E55003EA95C /* contacts.json */,
 				C3B888961FFFE03C0019D849 /* Info.plist */,
 				C3B8888E1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld */,
 				C3B8889C1FFFE2850019D849 /* Model.xcdatamodeld */,
 			);
 			path = BeeJeeTestingTask;
+			sourceTree = "<group>";
+		};
+		C3B888AF200237D50019D849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3B888D820024AE60019D849 /* State+CoreDataClass.swift */,
+				C3B888D920024AE60019D849 /* State+CoreDataProperties.swift */,
+				C3B888DA20024AE60019D849 /* Contact+CoreDataClass.swift */,
+				C3B888DB20024AE60019D849 /* Contact+CoreDataProperties.swift */,
+				C3B888DC20024AE60019D849 /* City+CoreDataClass.swift */,
+				C3B888DD20024AE60019D849 /* City+CoreDataProperties.swift */,
+				C3B888DE20024AE60019D849 /* PhoneNumber+CoreDataClass.swift */,
+				C3B888DF20024AE60019D849 /* PhoneNumber+CoreDataProperties.swift */,
+				C3B888E020024AE60019D849 /* Address+CoreDataClass.swift */,
+				C3B888E120024AE60019D849 /* Address+CoreDataProperties.swift */,
+				C329FED820024E9E003EA95C /* InitialJsonModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C329FED720024E55003EA95C /* contacts.json in Resources */,
 				C3B888951FFFE03C0019D849 /* LaunchScreen.storyboard in Resources */,
 				C3B888921FFFE03C0019D849 /* Assets.xcassets in Resources */,
 				C3B8888D1FFFE03C0019D849 /* Main.storyboard in Resources */,
@@ -142,10 +195,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B8888A1FFFE03C0019D849 /* ViewController.swift in Sources */,
+				C3B888E720024AE60019D849 /* City+CoreDataProperties.swift in Sources */,
+				C3B888E620024AE60019D849 /* City+CoreDataClass.swift in Sources */,
+				C3B888E220024AE60019D849 /* State+CoreDataClass.swift in Sources */,
+				C3B888EA20024AE60019D849 /* Address+CoreDataClass.swift in Sources */,
+				C3B888E420024AE60019D849 /* Contact+CoreDataClass.swift in Sources */,
+				C3B888E920024AE60019D849 /* PhoneNumber+CoreDataProperties.swift in Sources */,
+				C329FED920024E9E003EA95C /* InitialJsonModel.swift in Sources */,
 				C3B888881FFFE03C0019D849 /* AppDelegate.swift in Sources */,
+				C3B888E820024AE60019D849 /* PhoneNumber+CoreDataClass.swift in Sources */,
+				C3B888E520024AE60019D849 /* Contact+CoreDataProperties.swift in Sources */,
+				C3B888EB20024AE60019D849 /* Address+CoreDataProperties.swift in Sources */,
 				C3B888901FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld in Sources */,
 				C3B8889E1FFFE2850019D849 /* Model.xcdatamodeld in Sources */,
+				C329FEDB2002528E003EA95C /* ContactListTVC.swift in Sources */,
+				C3B888E320024AE60019D849 /* State+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

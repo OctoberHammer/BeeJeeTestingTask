@@ -1,0 +1,112 @@
+[
+  {
+    "ContactID" : "67faef69-1e96-4c9f-8d9b-bbaa95917d10",
+    "firstName" : "John",
+    "lastName" : "Appledeed",
+    "phoneNumber" : "408-550-3542",
+    "streetAddress1" : "Lancelot str., 3",
+    "streetAddress2" : "",
+    "city" : "San Jose",
+    "state" : "California",
+    "zipCode" : "20003"
+  },
+    {
+    "ContactID" : "68454c24-ee13-49bf-81bd-6ddcc9a5434f",
+    "firstName" : "Helene",
+    "lastName" : "Appleseed",
+    "phoneNumber" : "408-550-3542",
+    "streetAddress1" : "Lancelot str., 3",
+    "streetAddress2" : "",
+    "city" : "San Jose",
+    "state" : "California",
+    "zipCode" : "20003"
+  },
+    {
+    "ContactID" : "de29ef8f-e437-40cc-a627-acb533931963",
+    "firstName" : "Google",
+    "lastName" : "",
+    "phoneNumber" : "+1 734-332-6500",
+    "streetAddress1" : "2300 Traverwood Dr.",
+    "streetAddress2" : "",
+    "city" : "Ann Arbor",
+    "state" : "Michigan",
+    "zipCode" : "48105"
+  },
+    {
+    "ContactID" : "de29ef8f-e437-40cc-a627-acb533931963",
+    "firstName" : "Google",
+    "lastName" : "",
+    "phoneNumber" : "+1 404-487-9000",
+    "streetAddress1" : "10 10th Street NE",
+    "streetAddress2" : "",
+    "city" : "Atlanta",
+    "state" : "Georgia",
+    "zipCode" : "30309"
+  },
+    {
+    "ContactID" : "03937025-febb-4bf7-b058-2d86a3ccc3c8",
+    "firstName" : "Dad",
+    "lastName" : "",
+    "phoneNumber" : "+1 367-555-1234",
+    "streetAddress1" : "",
+    "streetAddress2" : "",
+    "city" : "Fargo",
+    "state" : "North Dacota",
+    "zipCode" : ""
+  },
+    {
+    "ContactID" : "d33aed83-775f-4060-b204-a2a3d84bff22",
+    "firstName" : "Mom",
+    "lastName" : "",
+    "phoneNumber" : "+1 367-555-9876",
+    "streetAddress1" : "",
+    "streetAddress2" : "",
+    "city" : "Fargo",
+    "state" : "North Dacota",
+    "zipCode" : ""
+  },
+    {
+    "ContactID" : "829ca235-59af-4805-b8a1-5e7bfe395261",
+    "firstName" : "Some",
+    "lastName" : "Friend",
+    "phoneNumber" : "+1-202-555-0107",
+    "streetAddress1" : "",
+    "streetAddress2" : "",
+    "city" : "Monterey",
+    "state" : "California",
+    "zipCode" : ""
+  },
+    {
+    "ContactID" : "6f293b24-f812-4b9b-82a8-1d6b26be4ee6",
+    "firstName" : "Another",
+    "lastName" : "Friend",
+    "phoneNumber" : "+1-518-555-0185",
+    "streetAddress1" : "",
+    "streetAddress2" : "",
+    "city" : "Albany",
+    "state" : "",
+    "zipCode" : ""
+  },
+    {
+    "ContactID" : "326014ca-bf1d-4ad1-ba68-7dc9788a41e7",
+    "firstName" : "Chief",
+    "lastName" : "",
+    "phoneNumber" : "+1-405-555-0196",
+    "streetAddress1" : "",
+    "streetAddress2" : "",
+    "city" : "Oklahoma City",
+    "state" : "Oklahoma",
+    "zipCode" : ""
+  },
+    {
+    "ContactID" : "b1d73102-2bd8-43bc-a8cc-a16ff4d456f4",
+    "firstName" : "Me",
+    "lastName" : "",
+    "phoneNumber" : "+1-602-555-0139",
+    "streetAddress1" : "",
+    "streetAddress2" : "",
+    "city" : "Phoenix",
+    "state" : "Arizona",
+    "zipCode" : ""
+  }
+]
