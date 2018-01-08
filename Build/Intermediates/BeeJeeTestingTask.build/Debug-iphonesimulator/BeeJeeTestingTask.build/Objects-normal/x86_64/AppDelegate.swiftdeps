@@ -27,6 +27,7 @@ depends-top-level:
 - "UIResponder"
 - "UIWindow"
 - !private "fatalError"
+- !private "print"
 depends-member:
 - ["17BeeJeeTestingTask11AppDelegateC", "Bool"]
 - !private ["17BeeJeeTestingTask11AppDelegateC", "NSError"]
@@ -51,6 +52,7 @@ depends-member:
 - ["17BeeJeeTestingTask11AppDelegateC", "init"]
 - ["17BeeJeeTestingTask11AppDelegateC", "persistentContainer"]
 - !private ["17BeeJeeTestingTask11AppDelegateC", "persistentContainer.storage"]
+- !private ["17BeeJeeTestingTask11AppDelegateC", "print"]
 - ["17BeeJeeTestingTask11AppDelegateC", "saveContext"]
 - ["17BeeJeeTestingTask11AppDelegateC", "window"]
 - !private ["s23BidirectionalCollectionP", "init"]
@@ -73,6 +75,7 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "loadPersistentStores"]
 - !private ["s7CVarArgP", "persistentContainer"]
+- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "save"]
 - !private ["s7CVarArgP", "saveContext"]
 - !private ["s7CVarArgP", "userInfo"]
@@ -99,6 +102,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "loadPersistentStores"]
 - !private ["s28CustomDebugStringConvertibleP", "persistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "save"]
 - !private ["s28CustomDebugStringConvertibleP", "saveContext"]
 - !private ["s28CustomDebugStringConvertibleP", "userInfo"]
@@ -128,6 +132,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "loadPersistentStores"]
 - !private ["s23CustomStringConvertibleP", "persistentContainer"]
+- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "save"]
 - !private ["s23CustomStringConvertibleP", "saveContext"]
 - !private ["s23CustomStringConvertibleP", "userInfo"]
@@ -157,6 +162,7 @@ depends-member:
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "loadPersistentStores"]
 - !private ["s9EquatableP", "persistentContainer"]
+- !private ["s9EquatableP", "print"]
 - !private ["s9EquatableP", "save"]
 - !private ["s9EquatableP", "saveContext"]
 - !private ["s9EquatableP", "userInfo"]
@@ -187,6 +193,7 @@ depends-member:
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "loadPersistentStores"]
 - !private ["s8HashableP", "persistentContainer"]
+- !private ["s8HashableP", "print"]
 - !private ["s8HashableP", "save"]
 - !private ["s8HashableP", "saveContext"]
 - !private ["s8HashableP", "userInfo"]
@@ -234,6 +241,7 @@ depends-member:
 - !private ["So8NSObjectC", "loadPersistentStores"]
 - ["So8NSObjectC", "persistentContainer"]
 - ["So8NSObjectC", "persistentContainer.storage"]
+- !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "save"]
 - ["So8NSObjectC", "saveContext"]
 - !private ["So8NSObjectC", "userInfo"]
@@ -257,6 +265,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "loadPersistentStores"]
 - !private ["So16NSObjectProtocolP", "persistentContainer"]
+- !private ["So16NSObjectProtocolP", "print"]
 - !private ["So16NSObjectProtocolP", "save"]
 - !private ["So16NSObjectProtocolP", "saveContext"]
 - !private ["So16NSObjectProtocolP", "userInfo"]
@@ -291,6 +300,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - !private ["So21UIApplicationDelegateP", "fatalError"]
 - !private ["So21UIApplicationDelegateP", "persistentContainer"]
+- !private ["So21UIApplicationDelegateP", "print"]
 - !private ["So21UIApplicationDelegateP", "saveContext"]
 - ["So21UIApplicationDelegateP", "window"]
 - ["So21UIApplicationDelegateP", ""]
@@ -310,6 +320,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "persistentContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "saveContext"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -335,6 +346,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "persistentContainer"]
 - ["So11UIResponderC", "persistentContainer.storage"]
+- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "saveContext"]
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", ""]
@@ -354,6 +366,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "fatalError"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "persistentContainer"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "saveContext"]
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -385,6 +398,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "loadPersistentStores"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "persistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "saveContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
@@ -471,4 +485,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "590a71efd179d8d9bab541dcbaaf6baa"
+interface-hash: "055d85e5d9f620b7614fe1416ca9fbb3"

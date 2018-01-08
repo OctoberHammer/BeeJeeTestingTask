@@ -9,20 +9,19 @@
 import Foundation
 
 
+struct initialJSONContact: Codable {
+  var ContactID: String?
+  var firstName: String?
+  var lastName: String?
+  var phoneNumber: String?
+  var streetAddress1: String?
+  var streetAddress2: String?
+  var city: String?
+  var state: String?
+  var zipCode: String = "10000"
+}
 
 
-
-struct Contacts: Codable {
-  struct InitialJsonModel: Codable {
-    var contactID: String
-    var firstName: String
-    var lastName: String
-    var phoneNumber: String
-    var streetAddress1: String
-    var streetAddress2: String
-    var city: String
-    var state: String
-    var zipCode: String
-  }
-  let contacts: [Contacts]
+struct InitialJsonContactList: Codable {
+  var contacts: [initialJSONContact]
 }

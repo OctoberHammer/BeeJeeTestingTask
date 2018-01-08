@@ -10,46 +10,42 @@
 		C329FED720024E55003EA95C /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = C329FED620024E55003EA95C /* contacts.json */; };
 		C329FED920024E9E003EA95C /* InitialJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FED820024E9E003EA95C /* InitialJsonModel.swift */; };
 		C329FEDB2002528E003EA95C /* ContactListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEDA2002528E003EA95C /* ContactListTVC.swift */; };
+		C329FEDE2002572A003EA95C /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEDD2002572A003EA95C /* NameSpace.swift */; };
+		C329FEE020026110003EA95C /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = C329FEDF2002610F003EA95C /* contact.json */; };
+		C329FEE220026A66003EA95C /* IndividualContactTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEE120026A66003EA95C /* IndividualContactTVC.swift */; };
+		C329FEE420026A93003EA95C /* EditingContactTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEE320026A93003EA95C /* EditingContactTVC.swift */; };
+		C329FEE620026D34003EA95C /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEE520026D34003EA95C /* ContactCell.swift */; };
+		C329FEE9200291BD003EA95C /* TotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEE8200291BD003EA95C /* TotalCell.swift */; };
+		C32B6FD320037BE0007354B8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C32B6FD120037BE0007354B8 /* Model.xcdatamodeld */; };
+		C32B6FDE2003C3BA007354B8 /* ContactCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B6FDC2003C3BA007354B8 /* ContactCD+CoreDataClass.swift */; };
+		C32B6FDF2003C3BA007354B8 /* ContactCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B6FDD2003C3BA007354B8 /* ContactCD+CoreDataProperties.swift */; };
+		C387D35B20036AF800346012 /* DBInitilizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C387D35A20036AF800346012 /* DBInitilizer.swift */; };
 		C3B888881FFFE03C0019D849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888871FFFE03C0019D849 /* AppDelegate.swift */; };
 		C3B8888D1FFFE03C0019D849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B8888B1FFFE03C0019D849 /* Main.storyboard */; };
-		C3B888901FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3B8888E1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld */; };
 		C3B888921FFFE03C0019D849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B888911FFFE03C0019D849 /* Assets.xcassets */; };
 		C3B888951FFFE03C0019D849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B888931FFFE03C0019D849 /* LaunchScreen.storyboard */; };
-		C3B8889E1FFFE2850019D849 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3B8889C1FFFE2850019D849 /* Model.xcdatamodeld */; };
-		C3B888E220024AE60019D849 /* State+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888D820024AE60019D849 /* State+CoreDataClass.swift */; };
-		C3B888E320024AE60019D849 /* State+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888D920024AE60019D849 /* State+CoreDataProperties.swift */; };
-		C3B888E420024AE60019D849 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DA20024AE60019D849 /* Contact+CoreDataClass.swift */; };
-		C3B888E520024AE60019D849 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DB20024AE60019D849 /* Contact+CoreDataProperties.swift */; };
-		C3B888E620024AE60019D849 /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DC20024AE60019D849 /* City+CoreDataClass.swift */; };
-		C3B888E720024AE60019D849 /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DD20024AE60019D849 /* City+CoreDataProperties.swift */; };
-		C3B888E820024AE60019D849 /* PhoneNumber+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DE20024AE60019D849 /* PhoneNumber+CoreDataClass.swift */; };
-		C3B888E920024AE60019D849 /* PhoneNumber+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888DF20024AE60019D849 /* PhoneNumber+CoreDataProperties.swift */; };
-		C3B888EA20024AE60019D849 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888E020024AE60019D849 /* Address+CoreDataClass.swift */; };
-		C3B888EB20024AE60019D849 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B888E120024AE60019D849 /* Address+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C329FED620024E55003EA95C /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = SOURCE_ROOT; };
 		C329FED820024E9E003EA95C /* InitialJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialJsonModel.swift; sourceTree = "<group>"; };
 		C329FEDA2002528E003EA95C /* ContactListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTVC.swift; sourceTree = "<group>"; };
+		C329FEDD2002572A003EA95C /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
+		C329FEDF2002610F003EA95C /* contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contact.json; sourceTree = SOURCE_ROOT; };
+		C329FEE120026A66003EA95C /* IndividualContactTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualContactTVC.swift; sourceTree = "<group>"; };
+		C329FEE320026A93003EA95C /* EditingContactTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingContactTVC.swift; sourceTree = "<group>"; };
+		C329FEE520026D34003EA95C /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		C329FEE8200291BD003EA95C /* TotalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCell.swift; sourceTree = "<group>"; };
+		C32B6FD220037BE0007354B8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C32B6FDC2003C3BA007354B8 /* ContactCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C32B6FDD2003C3BA007354B8 /* ContactCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C387D35A20036AF800346012 /* DBInitilizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBInitilizer.swift; sourceTree = "<group>"; };
 		C3B888841FFFE03C0019D849 /* BeeJeeTestingTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeJeeTestingTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B888871FFFE03C0019D849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3B8888C1FFFE03C0019D849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C3B8888F1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeeJeeTestingTask.xcdatamodel; sourceTree = "<group>"; };
 		C3B888911FFFE03C0019D849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3B888941FFFE03C0019D849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3B888961FFFE03C0019D849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3B8889D1FFFE2850019D849 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		C3B888D820024AE60019D849 /* State+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "State+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C3B888D920024AE60019D849 /* State+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "State+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C3B888DA20024AE60019D849 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C3B888DB20024AE60019D849 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C3B888DC20024AE60019D849 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C3B888DD20024AE60019D849 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C3B888DE20024AE60019D849 /* PhoneNumber+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C3B888DF20024AE60019D849 /* PhoneNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C3B888E020024AE60019D849 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C3B888E120024AE60019D849 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +63,20 @@
 			isa = PBXGroup;
 			children = (
 				C329FEDA2002528E003EA95C /* ContactListTVC.swift */,
+				C329FEE120026A66003EA95C /* IndividualContactTVC.swift */,
+				C329FEE320026A93003EA95C /* EditingContactTVC.swift */,
+				C329FEE720026D88003EA95C /* TableViewCells */,
 			);
 			path = "UI Controllers";
+			sourceTree = "<group>";
+		};
+		C329FEE720026D88003EA95C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C329FEE520026D34003EA95C /* ContactCell.swift */,
+				C329FEE8200291BD003EA95C /* TotalCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		C3B8887B1FFFE03C0019D849 = {
@@ -92,14 +100,15 @@
 			children = (
 				C3B888AF200237D50019D849 /* Model */,
 				C3B888871FFFE03C0019D849 /* AppDelegate.swift */,
+				C329FEDD2002572A003EA95C /* NameSpace.swift */,
 				C3B8888B1FFFE03C0019D849 /* Main.storyboard */,
 				C329FEDC2002534B003EA95C /* UI Controllers */,
 				C3B888911FFFE03C0019D849 /* Assets.xcassets */,
 				C3B888931FFFE03C0019D849 /* LaunchScreen.storyboard */,
+				C329FEDF2002610F003EA95C /* contact.json */,
 				C329FED620024E55003EA95C /* contacts.json */,
+				C32B6FD120037BE0007354B8 /* Model.xcdatamodeld */,
 				C3B888961FFFE03C0019D849 /* Info.plist */,
-				C3B8888E1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld */,
-				C3B8889C1FFFE2850019D849 /* Model.xcdatamodeld */,
 			);
 			path = BeeJeeTestingTask;
 			sourceTree = "<group>";
@@ -107,17 +116,10 @@
 		C3B888AF200237D50019D849 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C3B888D820024AE60019D849 /* State+CoreDataClass.swift */,
-				C3B888D920024AE60019D849 /* State+CoreDataProperties.swift */,
-				C3B888DA20024AE60019D849 /* Contact+CoreDataClass.swift */,
-				C3B888DB20024AE60019D849 /* Contact+CoreDataProperties.swift */,
-				C3B888DC20024AE60019D849 /* City+CoreDataClass.swift */,
-				C3B888DD20024AE60019D849 /* City+CoreDataProperties.swift */,
-				C3B888DE20024AE60019D849 /* PhoneNumber+CoreDataClass.swift */,
-				C3B888DF20024AE60019D849 /* PhoneNumber+CoreDataProperties.swift */,
-				C3B888E020024AE60019D849 /* Address+CoreDataClass.swift */,
-				C3B888E120024AE60019D849 /* Address+CoreDataProperties.swift */,
+				C32B6FDC2003C3BA007354B8 /* ContactCD+CoreDataClass.swift */,
+				C32B6FDD2003C3BA007354B8 /* ContactCD+CoreDataProperties.swift */,
 				C329FED820024E9E003EA95C /* InitialJsonModel.swift */,
+				C387D35A20036AF800346012 /* DBInitilizer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C329FED720024E55003EA95C /* contacts.json in Resources */,
+				C329FEE020026110003EA95C /* contact.json in Resources */,
 				C3B888951FFFE03C0019D849 /* LaunchScreen.storyboard in Resources */,
 				C3B888921FFFE03C0019D849 /* Assets.xcassets in Resources */,
 				C3B8888D1FFFE03C0019D849 /* Main.storyboard in Resources */,
@@ -195,21 +198,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B888E720024AE60019D849 /* City+CoreDataProperties.swift in Sources */,
-				C3B888E620024AE60019D849 /* City+CoreDataClass.swift in Sources */,
-				C3B888E220024AE60019D849 /* State+CoreDataClass.swift in Sources */,
-				C3B888EA20024AE60019D849 /* Address+CoreDataClass.swift in Sources */,
-				C3B888E420024AE60019D849 /* Contact+CoreDataClass.swift in Sources */,
-				C3B888E920024AE60019D849 /* PhoneNumber+CoreDataProperties.swift in Sources */,
+				C329FEE220026A66003EA95C /* IndividualContactTVC.swift in Sources */,
+				C387D35B20036AF800346012 /* DBInitilizer.swift in Sources */,
+				C329FEE9200291BD003EA95C /* TotalCell.swift in Sources */,
 				C329FED920024E9E003EA95C /* InitialJsonModel.swift in Sources */,
+				C32B6FDE2003C3BA007354B8 /* ContactCD+CoreDataClass.swift in Sources */,
+				C329FEDE2002572A003EA95C /* NameSpace.swift in Sources */,
+				C329FEE620026D34003EA95C /* ContactCell.swift in Sources */,
+				C329FEE420026A93003EA95C /* EditingContactTVC.swift in Sources */,
+				C32B6FD320037BE0007354B8 /* Model.xcdatamodeld in Sources */,
 				C3B888881FFFE03C0019D849 /* AppDelegate.swift in Sources */,
-				C3B888E820024AE60019D849 /* PhoneNumber+CoreDataClass.swift in Sources */,
-				C3B888E520024AE60019D849 /* Contact+CoreDataProperties.swift in Sources */,
-				C3B888EB20024AE60019D849 /* Address+CoreDataProperties.swift in Sources */,
-				C3B888901FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld in Sources */,
-				C3B8889E1FFFE2850019D849 /* Model.xcdatamodeld in Sources */,
 				C329FEDB2002528E003EA95C /* ContactListTVC.swift in Sources */,
-				C3B888E320024AE60019D849 /* State+CoreDataProperties.swift in Sources */,
+				C32B6FDF2003C3BA007354B8 /* ContactCD+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,22 +396,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C3B8888E1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodeld */ = {
+		C32B6FD120037BE0007354B8 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C3B8888F1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodel */,
+				C32B6FD220037BE0007354B8 /* Model.xcdatamodel */,
 			);
-			currentVersion = C3B8888F1FFFE03C0019D849 /* BeeJeeTestingTask.xcdatamodel */;
-			path = BeeJeeTestingTask.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		C3B8889C1FFFE2850019D849 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C3B8889D1FFFE2850019D849 /* Model.xcdatamodel */,
-			);
-			currentVersion = C3B8889D1FFFE2850019D849 /* Model.xcdatamodel */;
+			currentVersion = C32B6FD220037BE0007354B8 /* Model.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

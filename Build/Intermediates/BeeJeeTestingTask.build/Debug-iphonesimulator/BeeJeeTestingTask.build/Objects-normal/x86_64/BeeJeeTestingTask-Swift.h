@@ -172,8 +172,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
-@import CoreData;
 @import UIKit;
+@import CoreData;
 @import Foundation;
 #endif
 
@@ -186,25 +186,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wnullability"
 
 SWIFT_MODULE_NAMESPACE_PUSH("BeeJeeTestingTask")
-@class NSEntityDescription;
-@class NSManagedObjectContext;
-
-SWIFT_CLASS_NAMED("Address")
-@interface Address : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class City;
-@class Contact;
-
-@interface Address (SWIFT_EXTENSION(BeeJeeTestingTask))
-@property (nonatomic) int32_t zipCode;
-@property (nonatomic, copy) NSString * _Nullable streetAddress1;
-@property (nonatomic, copy) NSString * _Nullable streetAddress2;
-@property (nonatomic, strong) City * _Nullable city;
-@property (nonatomic, strong) Contact * _Nullable contacts;
-@end
-
 @class UIWindow;
 @class UIApplication;
 
@@ -220,58 +201,61 @@ SWIFT_CLASS("_TtC17BeeJeeTestingTask11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSEntityDescription;
+@class NSManagedObjectContext;
 
-SWIFT_CLASS_NAMED("City")
-@interface City : NSManagedObject
+SWIFT_CLASS_NAMED("ContactCD")
+@interface ContactCD : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class State;
 
-@interface City (SWIFT_EXTENSION(BeeJeeTestingTask))
-@property (nonatomic, copy) NSString * _Nullable title;
-@property (nonatomic, strong) State * _Nullable state;
+@interface ContactCD (SWIFT_EXTENSION(BeeJeeTestingTask))
+@property (nonatomic, copy) NSString * _Nonnull firstName;
+@property (nonatomic, copy) NSString * _Nonnull lastName;
+@property (nonatomic, copy) NSUUID * _Nonnull contactID;
+@property (nonatomic, copy) NSString * _Nullable phoneNumber;
+@property (nonatomic, copy) NSString * _Nullable state;
+@property (nonatomic, copy) NSString * _Nullable city;
+@property (nonatomic) int32_t zipCode;
 @end
 
+@class UILabel;
+@class NSCoder;
 
-SWIFT_CLASS_NAMED("Contact")
-@interface Contact : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class PhoneNumber;
-@class NSSet;
-
-@interface Contact (SWIFT_EXTENSION(BeeJeeTestingTask))
-- (void)addPhoneNumbersObject:(PhoneNumber * _Nonnull)value;
-- (void)removePhoneNumbersObject:(PhoneNumber * _Nonnull)value;
-- (void)addPhoneNumbers:(NSSet * _Nonnull)values;
-- (void)removePhoneNumbers:(NSSet * _Nonnull)values;
-@end
-
-
-@interface Contact (SWIFT_EXTENSION(BeeJeeTestingTask))
-- (void)addAddressObject:(Address * _Nonnull)value;
-- (void)removeAddressObject:(Address * _Nonnull)value;
-- (void)addAddress:(NSSet<Address *> * _Nonnull)values;
-- (void)removeAddress:(NSSet<Address *> * _Nonnull)values;
-@end
-
-
-@interface Contact (SWIFT_EXTENSION(BeeJeeTestingTask))
-@property (nonatomic, copy) NSUUID * _Nullable uuid;
-@property (nonatomic, copy) NSString * _Nullable firstName;
-@property (nonatomic, copy) NSString * _Nullable lastName;
-@property (nonatomic, copy) NSSet<Address *> * _Nullable address;
-@property (nonatomic, strong) NSSet * _Nullable phoneNumbers;
+SWIFT_CLASS("_TtC17BeeJeeTestingTask11ContactCell")
+@interface ContactCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified contactRepresentationLbl;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITableView;
+@protocol NSFetchedResultsSectionInfo;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC17BeeJeeTestingTask14ContactListTVC")
-@interface ContactListTVC : UITableViewController
+@interface ContactListTVC : UITableViewController <NSFetchedResultsControllerDelegate>
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)controllerWillChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
+- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeObject:(id _Nonnull)anObject atIndexPath:(NSIndexPath * _Nullable)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath * _Nullable)newIndexPath;
+- (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeSection:(id <NSFetchedResultsSectionInfo> _Nonnull)sectionInfo atIndex:(NSInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type;
+- (NSString * _Nullable)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller sectionIndexTitleForSectionName:(NSString * _Nonnull)sectionName SWIFT_WARN_UNUSED_RESULT;
+- (void)controllerDidChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17BeeJeeTestingTask17EditingContactTVC")
+@interface EditingContactTVC : UITableViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -282,35 +266,25 @@ SWIFT_CLASS("_TtC17BeeJeeTestingTask14ContactListTVC")
 @end
 
 
-SWIFT_CLASS_NAMED("PhoneNumber")
-@interface PhoneNumber : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC17BeeJeeTestingTask20IndividualContactTVC")
+@interface IndividualContactTVC : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface PhoneNumber (SWIFT_EXTENSION(BeeJeeTestingTask))
-@property (nonatomic, copy) NSString * _Nullable number;
-@property (nonatomic, strong) Contact * _Nullable contact;
-@end
-
-
-SWIFT_CLASS_NAMED("State")
-@interface State : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface State (SWIFT_EXTENSION(BeeJeeTestingTask))
-- (void)addCitiesObject:(City * _Nonnull)value;
-- (void)removeCitiesObject:(City * _Nonnull)value;
-- (void)addCities:(NSSet<City *> * _Nonnull)values;
-- (void)removeCities:(NSSet<City *> * _Nonnull)values;
-@end
-
-
-@interface State (SWIFT_EXTENSION(BeeJeeTestingTask))
-@property (nonatomic, copy) NSString * _Nullable title;
-@property (nonatomic, copy) NSSet<City *> * _Nullable cities;
+SWIFT_CLASS("_TtC17BeeJeeTestingTask9TotalCell")
+@interface TotalCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified totalLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_MODULE_NAMESPACE_POP
