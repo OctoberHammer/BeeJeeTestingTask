@@ -13,6 +13,11 @@ struct R {
   enum Cells: String {
     case cell, total, fieldCell
   }
+  
+  enum Segues: String {
+    case edit, create
+  }
+  
   static let initialJSONFileName: String = "contacts"
   static let exampleOfContact: String = "contact"
 

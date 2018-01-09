@@ -24,13 +24,16 @@ public class ContactCD: NSManagedObject {
         guard let existingContact = matches.first, let uuid = UUID(uuidString: jsonmodel.ContactID ?? "") else {
           return nil
         }
-        existingContact.firstName = jsonmodel.firstName ?? ""
-        existingContact.lastName = jsonmodel.lastName ?? ""
-        existingContact.contactID = uuid
-        existingContact.phoneNumber = jsonmodel.phoneNumber
-        existingContact.city = jsonmodel.city
-        existingContact.state = jsonmodel.state
-        existingContact.zipCode = Int32(jsonmodel.zipCode) ?? 10000
+        fillFields(of: existingContact, with: jsonmodel)
+//        existingContact.firstName = jsonmodel.firstName ?? ""
+//        existingContact.lastName = jsonmodel.lastName ?? ""
+//        existingContact.contactID = uuid
+//        existingContact.phoneNumber = jsonmodel.phoneNumber
+//        existingContact.city = jsonmodel.city
+//        existingContact.state = jsonmodel.state
+//        existingContact.zipCode = Int32(jsonmodel.zipCode) ?? 10000
+//        existingContact.streetAddress1 = jsonmodel.streetAddress1
+//        existingContact.streetAddress2 = jsonmodel.streetAddress2
         return existingContact
       }
     } catch {
@@ -39,16 +42,30 @@ public class ContactCD: NSManagedObject {
     let newContact = ContactCD(context: context)
  
     //guard let uuid = UUID(uuidString: jsonmodel.ContactID ?? "") else {return nil}
-
-    let uuid = UUID(uuidString: jsonmodel.ContactID ?? "") ?? UUID()
-    newContact.firstName = jsonmodel.firstName ?? ""
-    newContact.lastName = jsonmodel.lastName ?? ""
-    newContact.contactID = uuid
-    newContact.phoneNumber = jsonmodel.phoneNumber
-    newContact.city = jsonmodel.city
-    newContact.state = jsonmodel.state
-    newContact.zipCode = Int32(jsonmodel.zipCode) ?? 10000
+    fillFields(of: newContact, with: jsonmodel)
+//    let uuid = UUID(uuidString: jsonmodel.ContactID ?? "") ?? UUID()
+//    newContact.firstName = jsonmodel.firstName ?? ""
+//    newContact.lastName = jsonmodel.lastName ?? ""
+//    newContact.contactID = uuid
+//    newContact.phoneNumber = jsonmodel.phoneNumber
+//    newContact.city = jsonmodel.city
+//    newContact.state = jsonmodel.state
+//    newContact.zipCode = Int32(jsonmodel.zipCode) ?? 10000
     
     return newContact
   }
+  
+  static func fillFields(of contact: ContactCD, with jsonmodel: initialJSONContact) {
+    let uuid = UUID(uuidString: jsonmodel.ContactID ?? "") ?? UUID()
+    contact.firstName = jsonmodel.firstName ?? ""
+    contact.lastName = jsonmodel.lastName ?? ""
+    contact.contactID = uuid
+    contact.phoneNumber = jsonmodel.phoneNumber
+    contact.city = jsonmodel.city
+    contact.state = jsonmodel.state
+    contact.zipCode = Int32(jsonmodel.zipCode) ?? 10000
+    contact.streetAddress1 = jsonmodel.streetAddress1
+    contact.streetAddress2 = jsonmodel.streetAddress2
+  }
+  
 }

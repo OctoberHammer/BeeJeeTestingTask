@@ -25,3 +25,14 @@ struct initialJSONContact: Codable {
 struct InitialJsonContactList: Codable {
   var contacts: [initialJSONContact]
 }
+
+
+
+
+
+
+
+
+
+
+

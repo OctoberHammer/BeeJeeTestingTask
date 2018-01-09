@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C31776C32004165100C3B22D /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31776C22004165100C3B22D /* FieldCell.swift */; };
-		C31776C520042FF600C3B22D /* CreatingContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31776C420042FF600C3B22D /* CreatingContactVC.swift */; };
+		C31776C520042FF600C3B22D /* CreatingEditContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31776C420042FF600C3B22D /* CreatingEditContactVC.swift */; };
 		C329FED720024E55003EA95C /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = C329FED620024E55003EA95C /* contacts.json */; };
 		C329FED920024E9E003EA95C /* InitialJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FED820024E9E003EA95C /* InitialJsonModel.swift */; };
 		C329FEDB2002528E003EA95C /* ContactListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEDA2002528E003EA95C /* ContactListTVC.swift */; };
 		C329FEDE2002572A003EA95C /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEDD2002572A003EA95C /* NameSpace.swift */; };
 		C329FEE020026110003EA95C /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = C329FEDF2002610F003EA95C /* contact.json */; };
-		C329FEE220026A66003EA95C /* IndividualContactTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEE120026A66003EA95C /* IndividualContactTVC.swift */; };
 		C329FEE620026D34003EA95C /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEE520026D34003EA95C /* ContactCell.swift */; };
 		C329FEE9200291BD003EA95C /* TotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329FEE8200291BD003EA95C /* TotalCell.swift */; };
 		C32B6FD320037BE0007354B8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C32B6FD120037BE0007354B8 /* Model.xcdatamodeld */; };
@@ -29,13 +28,12 @@
 
 /* Begin PBXFileReference section */
 		C31776C22004165100C3B22D /* FieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
-		C31776C420042FF600C3B22D /* CreatingContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingContactVC.swift; sourceTree = "<group>"; };
+		C31776C420042FF600C3B22D /* CreatingEditContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingEditContactVC.swift; sourceTree = "<group>"; };
 		C329FED620024E55003EA95C /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = SOURCE_ROOT; };
 		C329FED820024E9E003EA95C /* InitialJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialJsonModel.swift; sourceTree = "<group>"; };
 		C329FEDA2002528E003EA95C /* ContactListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTVC.swift; sourceTree = "<group>"; };
 		C329FEDD2002572A003EA95C /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
 		C329FEDF2002610F003EA95C /* contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contact.json; sourceTree = SOURCE_ROOT; };
-		C329FEE120026A66003EA95C /* IndividualContactTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualContactTVC.swift; sourceTree = "<group>"; };
 		C329FEE520026D34003EA95C /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		C329FEE8200291BD003EA95C /* TotalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCell.swift; sourceTree = "<group>"; };
 		C32B6FD220037BE0007354B8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -65,9 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				C329FEDA2002528E003EA95C /* ContactListTVC.swift */,
-				C329FEE120026A66003EA95C /* IndividualContactTVC.swift */,
 				C329FEE720026D88003EA95C /* TableViewCells */,
-				C31776C420042FF600C3B22D /* CreatingContactVC.swift */,
+				C31776C420042FF600C3B22D /* CreatingEditContactVC.swift */,
 			);
 			path = "UI Controllers";
 			sourceTree = "<group>";
@@ -202,8 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31776C32004165100C3B22D /* FieldCell.swift in Sources */,
-				C329FEE220026A66003EA95C /* IndividualContactTVC.swift in Sources */,
-				C31776C520042FF600C3B22D /* CreatingContactVC.swift in Sources */,
+				C31776C520042FF600C3B22D /* CreatingEditContactVC.swift in Sources */,
 				C387D35B20036AF800346012 /* DBInitilizer.swift in Sources */,
 				C329FEE9200291BD003EA95C /* TotalCell.swift in Sources */,
 				C329FED920024E9E003EA95C /* InitialJsonModel.swift in Sources */,

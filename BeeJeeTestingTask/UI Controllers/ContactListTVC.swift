@@ -91,7 +91,9 @@ class ContactListTVC: UITableViewController, NSFetchedResultsControllerDelegate 
     }
   }
   
-  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    print(indexPath)
+  }
   
 
   //MARK: -
@@ -122,7 +124,7 @@ class ContactListTVC: UITableViewController, NSFetchedResultsControllerDelegate 
       if let updateIndexPath = indexPath {
         let cell = self.tableView.cellForRow(at: updateIndexPath as IndexPath) as! ContactCell
         if let contact = self.fetchedResultController?.object(at: updateIndexPath as IndexPath) {
-            cell.setup(with: contact)
+          cell.setup(with: contact)
         }
       }
     case .move:
@@ -135,16 +137,16 @@ class ContactListTVC: UITableViewController, NSFetchedResultsControllerDelegate 
     }
   }
   
-  func controller(
-    _ controller: NSFetchedResultsController<NSFetchRequestResult>,
-    didChange sectionInfo: NSFetchedResultsSectionInfo,
-    atSectionIndex sectionIndex: Int,
-    for type: NSFetchedResultsChangeType) {
-    print("Changing section")
-    // implementation to follow...
-  }
+//  func controller(
+//    _ controller: NSFetchedResultsController<NSFetchRequestResult>,
+//    didChange sectionInfo: NSFetchedResultsSectionInfo,
+//    atSectionIndex sectionIndex: Int,
+//    for type: NSFetchedResultsChangeType) {
+//    print("Changing section....")
+//
+//  }
   
-
+  
   
   public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, sectionIndexTitleForSectionName sectionName: String) -> String? {
     return sectionName
@@ -154,30 +156,40 @@ class ContactListTVC: UITableViewController, NSFetchedResultsControllerDelegate 
     self.tableView.endUpdates()
   }
   
-  /*
-   // Override to support conditional editing of the table view.
-   override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-   // Return false if you do not want the specified item to be editable.
-   return true
-   }
-   */
+  
+  // Override to support conditional editing of the table view.
+  override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    // Return false if you do not want the specified item to be editable.
+    let totalAmount = self.fetchedResultController?.fetchedObjects?.count ?? 0
+    if indexPath.row < totalAmount {
+      return true
+    } else {
+      return false
+    }
+  }
   
   
   
-
   
   
-  /*
+  
+  
+  
    // Override to support editing the table view.
-   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-   if editingStyle == .delete {
-   // Delete the row from the data source
-   tableView.deleteRows(at: [indexPath], with: .fade)
-   } else if editingStyle == .insert {
-   // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-   }
-   }
-   */
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      // Delete the row from the data source
+      let selectedRow = indexPath.row
+      if let context = self.container?.viewContext, let contactToDelete = self.fetchedResultController?.fetchedObjects?[selectedRow]  {
+        context.delete(contactToDelete)
+        try? context.save()
+        //tableView.deleteRows(at: [indexPath], with: .fade)
+      }
+    } else if editingStyle == .insert {
+      // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }
+  }
+  
   
   /*
    // Override to support rearranging the table view.
@@ -194,15 +206,21 @@ class ContactListTVC: UITableViewController, NSFetchedResultsControllerDelegate 
    }
    */
   
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
+  
+  // MARK: - Navigation
+  
+  // In a storyboard-based application, you will often want to do a little preparation before navigation
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == R.Segues.edit.rawValue {
+      if let indexPath = tableView.indexPathForSelectedRow{
+        let selectedRow = indexPath.row
+        let editVC = segue.destination as! CreatingContactVC
+        editVC.contactToEdit = self.fetchedResultController?.fetchedObjects?[selectedRow]
+        //detailVC.park = self.parksArray[selectedRow]
+      }
+    }
+  }
+  
   
   
  }
