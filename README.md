@@ -33,3 +33,17 @@ But we will test that we can at least add, update, and delete a contact.
 P.S. there is already a Contacts app in our product. Itís not a ìcode this for usî exercise.
 
 Good luck!
+
+
+
+# IMPLEMENTATION
+
+https://youtu.be/Mp_Kkb6OjG4
+
+1. I used **Codable** prototol to parse from JSON
+2. Special class with singleton for initial populating the Local DB
+3. Simple and stritforward model with only one entity (In the real world application I would use different entity for **phoneNumber**, **addres**(would include state, city, streetAddress and zipCode), **city** and **state**; moreover, state and city would link with one-tomany relation, and so for contact and phoneNumber, contact and address - because a person can have more than one phoneNumber)
+4. I use **NSFetchedResultsController** for synchronization my UI (ContactListTVC) with core data. Basically used MVC-pattern
+5. Different ViewController for editing/creating contact - in the real application perhapse I would implement two different controllers, both of them would inherit from **TableViewController** with the cell for every field
+6. Deleting is also implemented in contact list VC
+8. The whole implementation with some experiments tooks me 8 hours.
