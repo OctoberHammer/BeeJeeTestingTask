@@ -11,10 +11,17 @@ import Foundation
 
 struct R {
   enum Cells: String {
-    case cell, total
+    case cell, total, fieldCell
   }
   static let initialJSONFileName: String = "contacts"
   static let exampleOfContact: String = "contact"
 
+  enum entities: String{
+    case ContactCD
+  }
   
+  
+  enum visibleFields: String {
+    case firstName, lastName, city, state, phoneNumber, zipCode
+  }
 }

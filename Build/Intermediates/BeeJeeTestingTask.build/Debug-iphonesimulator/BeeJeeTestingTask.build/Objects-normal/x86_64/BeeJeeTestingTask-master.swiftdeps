@@ -1,15 +1,16 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "a81fb5576e6417d2d6d2665adfab807d"
-build_time: [1515439644, 798934000]
+build_time: [1515461339, 575719000]
 inputs:
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/TableViewCells/FieldCell.swift": [1515448345, 0]
   "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/IndividualContactTVC.swift": [1515336422, 0]
-  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/DBInitilizer.swift": [1515439644, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/CreatingContactVC.swift": [1515461339, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/DBInitilizer.swift": [1515444353, 0]
   "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/TableViewCells/TotalCell.swift": [1515358930, 0]
   "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/InitialJsonModel.swift": [1515425354, 0]
   "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/ContactCD+CoreDataClass.swift": [1515428475, 0]
-  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/NameSpace.swift": [1515335929, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/NameSpace.swift": [1515447887, 0]
   "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/TableViewCells/ContactCell.swift": [1515425612, 0]
-  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/EditingContactTVC.swift": [1515336466, 0]
   "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/AppDelegate.swift": [1515424606, 0]
-  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/ContactListTVC.swift": [1515439644, 0]
+  "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/UI Controllers/ContactListTVC.swift": [1515444353, 0]
   "/Users/octoberhammer/Developer/BeeJeeTestingTask/BeeJeeTestingTask/Model/ContactCD+CoreDataProperties.swift": [1515425354, 0]

@@ -27,10 +27,18 @@ class DBInitializer {
     if let path = Bundle.main.path(forResource: R.initialJSONFileName, ofType: "json") {
       var initialJSONContacts: [initialJSONContact] = []
       if let container = self.container {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: R.entities.ContactCD.rawValue)
+        let count = (try? container.viewContext.count(for: request)) ?? 0
+        if count > 0 {
+          print("👏 DB had been initilized long before...")
+          return
+        }
+        
         container.viewContext.automaticallyMergesChangesFromParent = true
         //Child context in the background
         let backgroundContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         backgroundContext.parent = container.viewContext
+        
         DispatchQueue.global(qos: .background).async {
           
           do {

@@ -20,7 +20,6 @@ depends-top-level:
 - "AppDelegate"
 - "Array"
 - !private "AssignmentPrecedence"
-- "BlockOperation"
 - "BooleanLiteralType"
 - "CastingPrecedence"
 - "ContactCD"
@@ -110,7 +109,6 @@ depends-member:
 - ["17BeeJeeTestingTask9ContactCDC", "deinit"]
 - !private ["17BeeJeeTestingTask11ContactCellC", "setup"]
 - ["17BeeJeeTestingTask14ContactListTVCC", "AppDelegate"]
-- ["17BeeJeeTestingTask14ContactListTVCC", "BlockOperation"]
 - ["17BeeJeeTestingTask14ContactListTVCC", "ContactCD"]
 - !private ["17BeeJeeTestingTask14ContactListTVCC", "ContactCell"]
 - !private ["17BeeJeeTestingTask14ContactListTVCC", "DBInitializer"]
@@ -129,7 +127,6 @@ depends-member:
 - ["17BeeJeeTestingTask14ContactListTVCC", "UIApplication"]
 - ["17BeeJeeTestingTask14ContactListTVCC", "UITableView"]
 - ["17BeeJeeTestingTask14ContactListTVCC", "UITableViewCell"]
-- ["17BeeJeeTestingTask14ContactListTVCC", "blockOperations"]
 - ["17BeeJeeTestingTask14ContactListTVCC", "container"]
 - ["17BeeJeeTestingTask14ContactListTVCC", "controller"]
 - ["17BeeJeeTestingTask14ContactListTVCC", "controllerDidChangeContent"]
@@ -416,7 +413,6 @@ depends-member:
 - !private ["So15NSManagedObjectC", "contactID"]
 - !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "AppDelegate"]
-- ["So8NSObjectC", "BlockOperation"]
 - ["So8NSObjectC", "ContactCD"]
 - !private ["So8NSObjectC", "ContactCell"]
 - !private ["So8NSObjectC", "DBInitializer"]
@@ -436,7 +432,6 @@ depends-member:
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "beginUpdates"]
-- ["So8NSObjectC", "blockOperations"]
 - !private ["So8NSObjectC", "cellForRow"]
 - !private ["So8NSObjectC", "contactID"]
 - ["So8NSObjectC", "container"]
@@ -671,7 +666,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "AppDelegate"]
-- ["So11UIResponderC", "BlockOperation"]
 - ["So11UIResponderC", "ContactCD"]
 - !private ["So11UIResponderC", "ContactCell"]
 - !private ["So11UIResponderC", "DBInitializer"]
@@ -691,7 +685,6 @@ depends-member:
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "beginUpdates"]
-- ["So11UIResponderC", "blockOperations"]
 - !private ["So11UIResponderC", "cellForRow"]
 - ["So11UIResponderC", "container"]
 - ["So11UIResponderC", "controller"]
@@ -800,7 +793,6 @@ depends-member:
 - !private ["So11UITableViewC", "insertRows"]
 - !private ["So15UITableViewCellC", "setup"]
 - ["So21UITableViewControllerC", "AppDelegate"]
-- ["So21UITableViewControllerC", "BlockOperation"]
 - ["So21UITableViewControllerC", "ContactCD"]
 - !private ["So21UITableViewControllerC", "ContactCell"]
 - !private ["So21UITableViewControllerC", "DBInitializer"]
@@ -819,7 +811,6 @@ depends-member:
 - ["So21UITableViewControllerC", "UIApplication"]
 - ["So21UITableViewControllerC", "UITableView"]
 - ["So21UITableViewControllerC", "UITableViewCell"]
-- ["So21UITableViewControllerC", "blockOperations"]
 - ["So21UITableViewControllerC", "container"]
 - ["So21UITableViewControllerC", "controller"]
 - ["So21UITableViewControllerC", "controllerDidChangeContent"]
@@ -906,7 +897,6 @@ depends-member:
 - !private ["So6UIViewC", "insertRows"]
 - !private ["So6UIViewC", "setup"]
 - ["So16UIViewControllerC", "AppDelegate"]
-- ["So16UIViewControllerC", "BlockOperation"]
 - ["So16UIViewControllerC", "ContactCD"]
 - !private ["So16UIViewControllerC", "ContactCell"]
 - !private ["So16UIViewControllerC", "DBInitializer"]
@@ -925,7 +915,6 @@ depends-member:
 - ["So16UIViewControllerC", "UIApplication"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
-- ["So16UIViewControllerC", "blockOperations"]
 - ["So16UIViewControllerC", "container"]
 - ["So16UIViewControllerC", "controller"]
 - ["So16UIViewControllerC", "controllerDidChangeContent"]
@@ -1140,4 +1129,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "1a374280dffc1bf5c701f9807369e4fd"
+interface-hash: "890a9fbd3079a878cefce76c9ce4cdc9"
